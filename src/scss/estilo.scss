@@ -784,3 +784,22 @@ footer {
     }
 }
 /*FOOTER*/
+
+/*Página erro*/ 
+
+.paginaErro{
+    display: flex;
+    padding: 5rem 10rem;
+    justify-content: space-around;
+    background: linear-gradient(to bottom, var(--main), white);
+}
+
+.tituloErro{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 500px;
+}
+
+
+/*Página erro*/ 
