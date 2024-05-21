@@ -72,7 +72,7 @@ function Planos() {
                 </ul>
             </div>
             <div>
-                <img src={Enfermeira} alt="Enfermeira" id="nurse-image" style="margin-top: 50px;"/>
+                <img src={Enfermeira} alt="Enfermeira" id="nurse-image"/>
                 <div id="tooltip"></div>
             </div>
             </div>

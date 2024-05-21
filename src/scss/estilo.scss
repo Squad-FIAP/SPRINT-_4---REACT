@@ -308,9 +308,10 @@
 /*Planos*/
 
 .container {
-    max-width: 900px;
+    max-width: 500px;
+    height: 700px;
     margin: auto;
-    padding-top: 40px;
+    padding-top: 150px;
   }
   .tab {
     background: #9370DB;
@@ -421,9 +422,126 @@
 
 /*Planos*/
 
-/*Preparatórios*/
+/*Procedimentos*/
 main {
     height: 60vh;
+    background: linear-gradient(to top, var(--footer), var(--main));
+    font-size: 16px;
+}
+
+.procedures-section {
+    padding: 20px;
+    height: 700px;
+  }
+
+.procedures-section input{
+    width: 500px;
+  }
+
+.procedures-section h1 {
+    margin-bottom: 10px;
+    font-size: 24px; 
+  }
+
+.procedures-section p {
+    height: 100px;
+    margin-bottom: 20px;
+  }
+  
+#procedure-search {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+#search-btn {
+    padding: 10px 20px;
+    font-size: 16px; 
+    color: #fff;
+    background-color: #007bff; 
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+#procedure-description {
+    margin-top: 20px;
+    background-color: #f8f8f8;
+    padding: 20px;
+    height: 300px;
+  }
+
+  @media (max-width: 1201px) {
+    .procedures-section input {
+      width: 100%; /* Torna os inputs responsivos */
+    }
+  
+    .procedures-section p {
+      height: auto; /* Ajusta a altura automaticamente conforme o conteúdo */
+    }
+  
+    #procedure-description {
+      height: auto; /* Permite que a altura se ajuste ao conteúdo */
+    }
+  }
+
+  @media (min-width: 901px) and (max-width: 1200px) {
+    .procedures-section input {
+      width: 90%; /* Ajusta a largura do input para manter a responsividade */
+    }
+  
+    #procedure-description {
+      padding: 15px; /* Ajusta o padding para um pouco mais de espaço */
+      height: auto; /* Ajusta a altura conforme o conteúdo */
+    }
+  }
+
+  @media (min-width: 601px) and (max-width: 900px) {
+    .procedures-section {
+      padding: 10px; /* Reduz o padding para economizar espaço */
+    }
+  
+    .procedures-section input, #procedure-search, #search-btn {
+      width: 100%; /* Maximiza a largura dos inputs e botões */
+    }
+  
+    #procedure-description {
+      padding: 10px; /* Ajusta o padding */
+      height: auto; /* Flexibiliza a altura */
+    }
+  }
+
+  @media (max-width: 600px) {
+    .procedures-section {
+      padding: 5px; /* Minimiza o padding */
+    }
+  
+    .procedures-section input, #procedure-search, #search-btn {
+      width: 100%; /* Ajusta inputs e botões para a largura total */
+      margin-bottom: 5px; /* Reduz o espaçamento para uma aparência mais compacta */
+    }
+  
+    .procedures-section h1 {
+      font-size: 20px; /* Reduz o tamanho da fonte para melhor ajuste */
+    }
+  
+    #procedure-description {
+      margin-top: 10px;
+      padding: 10px;
+      height: auto; /* Torna a altura autoajustável */
+    }
+  }
+  
+
+
+/*Procedimentos*/
+
+/*Preparatórios*/
+main {
+  padding-top: 100px;
+    height: 70vh;
     background: linear-gradient(to top, var(--footer), var(--main));
     display: flex;
     justify-content: center;
@@ -511,119 +629,13 @@ main {
 
 /*Preparatórios*/
 
-/*Procedimentos*/
-main {
-    height: 60vh;
-    background: linear-gradient(to top, var(--footer), var(--main));
-    font-size: 16px;
+/*contatos*/
+
+.container-contato{
+  height: 700px;
 }
 
-.procedures-section {
-    padding: 20px;
-  }
-  .procedures-section input{
-    width: 400px;
-  }
-  
-  .procedures-section h1 {
-    margin-bottom: 10px;
-    font-size: 24px; 
-  }
-  
-  .procedures-section p {
-    height: 100px;
-    margin-bottom: 20px;
-  }
-  
-  #procedure-search {
-    margin-bottom: 10px;
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  #search-btn {
-    padding: 10px 20px;
-    font-size: 16px; 
-    color: #fff;
-    background-color: #007bff; 
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  #procedure-description {
-    margin-top: 20px;
-    background-color: #f8f8f8;
-    padding: 20px;
-    height: 300px;
-  }
-
-  @media (max-width: 1201px) {
-    .procedures-section input {
-      width: 100%; /* Torna os inputs responsivos */
-    }
-  
-    .procedures-section p {
-      height: auto; /* Ajusta a altura automaticamente conforme o conteúdo */
-    }
-  
-    #procedure-description {
-      height: auto; /* Permite que a altura se ajuste ao conteúdo */
-    }
-  }
-
-  @media (min-width: 901px) and (max-width: 1200px) {
-    .procedures-section input {
-      width: 90%; /* Ajusta a largura do input para manter a responsividade */
-    }
-  
-    #procedure-description {
-      padding: 15px; /* Ajusta o padding para um pouco mais de espaço */
-      height: auto; /* Ajusta a altura conforme o conteúdo */
-    }
-  }
-
-  @media (min-width: 601px) and (max-width: 900px) {
-    .procedures-section {
-      padding: 10px; /* Reduz o padding para economizar espaço */
-    }
-  
-    .procedures-section input, #procedure-search, #search-btn {
-      width: 100%; /* Maximiza a largura dos inputs e botões */
-    }
-  
-    #procedure-description {
-      padding: 10px; /* Ajusta o padding */
-      height: auto; /* Flexibiliza a altura */
-    }
-  }
-
-  @media (max-width: 600px) {
-    .procedures-section {
-      padding: 5px; /* Minimiza o padding */
-    }
-  
-    .procedures-section input, #procedure-search, #search-btn {
-      width: 100%; /* Ajusta inputs e botões para a largura total */
-      margin-bottom: 5px; /* Reduz o espaçamento para uma aparência mais compacta */
-    }
-  
-    .procedures-section h1 {
-      font-size: 20px; /* Reduz o tamanho da fonte para melhor ajuste */
-    }
-  
-    #procedure-description {
-      margin-top: 10px;
-      padding: 10px;
-      height: auto; /* Torna a altura autoajustável */
-    }
-  }
-  
-
-
-/*Procedimentos*/
+/*contatos*/
 
 /*FOOTER*/
 
