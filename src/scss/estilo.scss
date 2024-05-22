@@ -106,9 +106,10 @@
 
 #banner-text h1{
     font-size: 3rem;
-    font-weight: 300;
+    font-weight: 500;
     padding-right: 30%;
     color: var(--footer);
+    padding-top: 280px;
 }
 
 #banner-text button{
@@ -457,6 +458,7 @@ main {
   }
   
 #search-btn {
+    width: 140px;
     padding: 10px 20px;
     font-size: 16px; 
     color: #fff;
@@ -631,6 +633,11 @@ main {
 
 /*contatos*/
 
+.pg-contato {
+    height: 670px;
+    padding-top: 150px;
+}
+
 .contato-container {
     background: linear-gradient(to bottom, #e0f7fa, #80deea);
     padding: 20px;
@@ -785,9 +792,10 @@ footer {
     padding: 0px 1.25rem;
     font-size: 1.125rem;
     height: 100%;
-    border-radius: 0px 4px 4px 0px;
+    border-radius: 0px 4px 0px 0px;
     cursor: pointer;
     transition: all 0.4s;
+    margin: 10px 0  10px 0;
 }
 
 #input_group button:hover {

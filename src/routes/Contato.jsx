@@ -39,6 +39,8 @@ const Contato = () => {
     };
 
     return (
+        <>
+        <section className='pg-contato'>
         <div className="contato-container">
             <h2>Agende sua consulta</h2>
             <p>Agende agora mesmo a sua consulta</p>
@@ -46,6 +48,10 @@ const Contato = () => {
                 <label>
                     Nome:
                     <input type="text" name="nome" value={formData.nome} onChange={handleChange} required />
+                </label>
+                <label>
+                    Exame:
+                    <input type="text" name="exame" value={formData.exame} onChange={handleChange} required />
                 </label>
                 <label>
                     E-mail:
@@ -62,6 +68,8 @@ const Contato = () => {
                 <button type="submit">Enviar</button>
             </form>
         </div>
+        </section>
+        </>
     );
 };
 

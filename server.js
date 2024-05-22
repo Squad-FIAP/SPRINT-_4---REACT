@@ -11,6 +11,7 @@ mongoose.connect('mongodb://localhost:27017/agendamentos', { useNewUrlParser: tr
 
 const agendamentoSchema = new mongoose.Schema({
   nome: String,
+  exame: String,
   email: String,
   telefone: String,
   mensagem: String
@@ -19,10 +20,10 @@ const agendamentoSchema = new mongoose.Schema({
 const Agendamento = mongoose.model('Agendamento', agendamentoSchema);
 
 app.post('/agendar-consulta', (req, res) => {
-    const { nome, email, telefone, mensagem } = req.body;
+    const { nome, exame, email, telefone, mensagem } = req.body;
     console.log('Agendamento recebido:', req.body);
 
-    const novoAgendamento = new Agendamento({ nome, email, telefone, mensagem });
+    const novoAgendamento = new Agendamento({ nome, exame, email, telefone, mensagem });
     novoAgendamento.save(err => {
       if (err) {
         res.status(500).send({ message: 'Ocorreu um erro ao realizar o agendamento.' });
