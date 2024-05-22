@@ -1,7 +1,27 @@
+import React, { useState } from 'react';
 import '../scss/estilo.scss'
 import Enfermeira from '../assets/enfermeira.svg'
 
 function Planos() {
+    const [activeTab, setActiveTab] = useState(null);
+    const [tooltip, setTooltip] = useState({ display: false, x: 0, y: 0 });
+
+    const toggleContent = (id) => {
+        if (activeTab === id) {
+            setActiveTab(null);
+        } else {
+            setActiveTab(id);
+        }
+    }
+
+    const handleImageClick = (event) => {
+        setTooltip({
+            display: !tooltip.display,
+            x: event.pageX,
+            y: event.pageY
+        });
+    }
+
     return (
         <>
             <div className="container">
@@ -71,10 +91,12 @@ function Planos() {
                     <li>SulAmérica Saúde</li>
                 </ul>
             </div>
-            <div>
-                <img src={Enfermeira} alt="Enfermeira" id="nurse-image"/>
-                <div id="tooltip"></div>
-            </div>
+                <img src={Enfermeira} alt="Enfermeira" id="nurse-image" onClick={handleImageClick}/>
+                <div id="tooltip" style={{ display: tooltip.display ? 'block' : 'none', top: tooltip.y, left: tooltip.x }}>
+                    <strong>Plano de saúde: por que você precisa de um?</strong><br/>
+                    Um plano de saúde é essencial para garantir acesso a cuidados médicos de qualidade, cobrindo consultas, exames, procedimentos e emergências, proporcionando segurança financeira diante de despesas médicas inesperadas. Além disso, oferece uma rede de profissionais e hospitais credenciados, reduzindo o tempo de espera por atendimento e possibilitando uma melhor gestão da saúde a longo prazo.<br/>
+                    Aproveite e conheça melhor sobre como funciona um bom plano de saúde e confira dicas de saúde atualizadas, afinal, ter saúde é o que realmente interessa e se você se ama, se cuida com um bom plano, não é mesmo? Cuide bem de você e de quem você ama!
+                </div>
             </div>
         </>
     )
