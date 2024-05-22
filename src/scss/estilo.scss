@@ -8,6 +8,7 @@
     --main: #B7C9F2;
     --copyright: #B7C9F2;
     --footer: #FFFFFF;
+    --titulo: #67707248;
     --cor_letra: #000000;
 }
 
@@ -105,23 +106,25 @@
 }
 
 #banner-text h1{
-    font-size: 3rem;
+    font-size: 5rem;
     font-weight: 500;
     padding-right: 30%;
-    color: var(--footer);
+    color: var(--titulo);
     padding-top: 280px;
 }
 
-#banner-text button{
+#banner-text .exame{
     display: flex;
     justify-content: space-around;
     border: none;
     border-radius: 0.7rem;
     padding: 0.8rem 1.2rem ;
     background-color: var(--main);
-    font-size: 1rem;
+    font-size: 2rem;
     font-weight: 100;
     cursor:pointer;
+    color: var(--cor_letra);
+    text-decoration: none;
 }
 
 #units{
@@ -359,7 +362,7 @@
     padding: 20px;
     font-size: 16px; 
     line-height: 1.5; 
-    width: 70%; 
+    width: 50%; 
     margin: auto; 
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
     border-radius: 8px;

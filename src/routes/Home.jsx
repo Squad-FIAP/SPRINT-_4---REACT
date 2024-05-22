@@ -8,6 +8,7 @@ import Reabilitacao from '../assets/reabilitacao.jpeg'
 import Ambulatorio from '../assets/ambulatorio.jpeg'
 import Coracao from '../assets/coracao.jpeg'
 import Psiquiatria from '../assets/Psiquiatria.jpeg'
+import { Link } from 'react-router-dom';
 
 function Home() {
     return(
@@ -18,8 +19,8 @@ function Home() {
                 <div id="banner-text">
                     <h1>Somos referência 
                         em Oncologia 
-                        infanto-juvenil</h1>
-                    <button className="exame">Marque seu exame</button>
+                        Infanto-Juvenil</h1>
+                    <Link to="/Contato" className="exame">Marque seu exame</Link>
                 </div>
 
                 <div id="banner-image">

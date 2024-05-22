@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import '../scss/estilo.scss'
 import Enfermeira from '../assets/enfermeira.svg'
 
@@ -25,8 +25,8 @@ function Planos() {
     return (
         <>
             <div className="container">
-                <div className="tab" onClick="toggleContent('content-1')">Plano de Saúde para idosos</div>
-                <div className="content" id="content-1">
+               <div className="tab" onClick={() => toggleContent('content-1')}>Plano de Saúde para idosos</div>
+                <div className="content" style={{ display: activeTab === 'content-1' ? 'block' : 'none' }} id="content-1">
                 <ul>
                     <li>Cobertura Especializada</li>
                     <li>Acessibilidade e Suporte</li>
@@ -36,8 +36,8 @@ function Planos() {
                     <li>Prevent Senior</li>
                 </ul>
                 </div>
-                <div className="tab" onClick="toggleContent('content-2')">Plano de Saúde para crianças</div>
-                <div className="content" id="content-2">
+                <div className="tab" onClick={() => toggleContent('content-2')}>Plano de Saúde para idosos</div>
+                <div className="content" style={{ display: activeTab === 'content-2' ? 'block' : 'none' }} id="content-2">
                     <ul>
                         <li>Cobertura Pediátrica</li>
                         <li>Especialidades Inclusas</li>
@@ -47,8 +47,8 @@ function Planos() {
                         <li>Amil</li>
                     </ul>
                 </div>
-                <div className="tab" onClick="toggleContent('content-3')">Plano de Saúde para gestantes</div>
-                <div className="content" id="content-3">
+                <div className="tab" onClick={() => toggleContent('content-3')}>Plano de Saúde para idosos</div>
+                <div className="content" style={{ display: activeTab === 'content-3' ? 'block' : 'none' }} id="content-3">
                 <ul>
                     <li>Cobertura de Pré-natal</li>
                     <li>Parto e Pós-parto</li>
@@ -58,8 +58,8 @@ function Planos() {
                     <li>Plano de saúde Alice</li>
                 </ul>
                 </div>
-                <div className="tab" onClick="toggleContent('content-4')">Plano de Saúde para familia</div>
-                <div className="content" id="content-4">
+                <div className="tab" onClick={() => toggleContent('content-4')}>Plano de Saúde para idosos</div>
+                <div className="content" style={{ display: activeTab === 'content-4' ? 'block' : 'none' }} id="content-4">
                 <ul>
                     <li>Cobertura Familiar</li>
                     <li>Flexibilidade</li>
@@ -69,8 +69,8 @@ function Planos() {
                     <li>Sami Saúde</li>
                 </ul>
                 </div>
-                <div className="tab" onClick="toggleContent('content-5')">Planos de Saúde Individuais</div>
-                <div className="content" id="content-5">
+                <div className="tab" onClick={() => toggleContent('content-5')}>Plano de Saúde para idosos</div>
+                <div className="content" style={{ display: activeTab === 'content-5' ? 'block' : 'none' }} id="content-5">
                 <ul>
                     <li>Personalização</li>
                     <li>Coparticipação</li>
@@ -79,9 +79,8 @@ function Planos() {
                     <li>Plano de saúde individual NotreLife - Notre Dame</li>
                 </ul>
                 </div>
-            
-                <div className="tab" onClick="toggleContent('content-6')">Planos de Saúde para pessoas PCD</div>
-                <div className="content" id="content-6">
+                <div className="tab" onClick={() => toggleContent('content-6')}>Plano de Saúde para idosos</div>
+                <div className="content" style={{ display: activeTab === 'content-6' ? 'block' : 'none' }} id="content-6">
                 <ul>
                     <li>Cobertura Especializada</li>
                     <li>Acessibilidade</li>
