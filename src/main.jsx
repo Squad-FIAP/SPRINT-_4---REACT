@@ -10,6 +10,7 @@ import Contato from './routes/Contato.jsx'
 import Error from './routes/Error.jsx'
 
 
+
 const router = createBrowserRouter([
 {
   path:'/', element:<App />,
