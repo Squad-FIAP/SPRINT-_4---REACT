@@ -16,8 +16,6 @@ O objetivo desta Sprint era criar uma pagina para Hospital das Clinicas, para so
 
 # 🧠 Contexto
 
-![Projeto]()
-
 O objetivo que o HC pediu ajuda para que alcançasse uma forma de ajudar pais e mães e também o publico infantil em relação a exames que acontecem no local:
 - [x] Esses exames as vezes mal explicados podem gerar algum tipo de desconforto somente em saber qual seria o procedimento, por conta disso se desenvolveu uma plataforma para ajudar a resolver.
       
