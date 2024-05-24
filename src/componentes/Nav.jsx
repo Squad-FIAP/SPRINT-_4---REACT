@@ -3,6 +3,7 @@ import '../scss/estilo.scss'
 import { Link } from 'react-router-dom'
 
 
+
 function Nav() {
     return (
         <>
